@@ -18,10 +18,9 @@ public class Restaurant {
 	private int id;  
 	@Column  
 	private String name;
+	
 	@Column  
-	private int cookTime;
-	@Column  
-	private String image;
+	private String imageUrl;
 	@Column  
 	private int phone;
 	
@@ -49,17 +48,25 @@ public class Restaurant {
 	}
 	
 	
-	public String getImage() {
-		return image;
-	}
-	public void setImage(String image) {
-		this.image = image;
-	}
+
 	public int getPhone() {
 		return phone;
 	}
 	public void setPhone(int phone) {
 		this.phone = phone;
 	}
+	public String getImageUrl() {
+		return imageUrl;
+	}
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+	@Override
+	public String toString() {
+		return "Restaurant [id=" + id + ", name=" + name + ", imageUrl=" + imageUrl + ", phone=" + phone + ", adresse="
+				+ adresse + "]";
+	}
+	
+	
 
 }
