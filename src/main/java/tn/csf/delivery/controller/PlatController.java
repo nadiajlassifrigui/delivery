@@ -66,6 +66,11 @@ public class PlatController {
 			ps.saveOrUpdate(p);  
 			return p;  
 		}  
+		@GetMapping("/platsByRestaurant/{idrestaurant}")
+		private List<Plat> getAllPlatsByIdrestaurant(@PathVariable("idrestaurant") int idrestaurant)   
+		{  
+			return ps.getAllPlatsByIdrestaurant(idrestaurant);  
+		}  
 	}
 
 

@@ -33,6 +33,11 @@ public class PlatService {
 	{  
 		return pR.findById(id).get();  
 	}  
+	public List<Plat> getAllPlatsByIdrestaurant(int idrestaurant)   
+	{  
+		
+		return pR.findByIdrestaurant(idrestaurant);  	
+	}  
 
 
 	//saving a specific record by using the method save() of CrudRepository  
